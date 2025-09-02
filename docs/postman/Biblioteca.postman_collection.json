@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "Biblioteca API",
+    "_postman_id": "abc123",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar livros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/livros",
+          "host": [
+            "http://localhost:8080"
+          ],
+          "path": [
+            "livros"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar autor",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nome\": \"Robert C. Martin\", \"nacionalidade\": \"EUA\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/autores",
+          "host": [
+            "http://localhost:8080"
+          ],
+          "path": [
+            "autores"
+          ]
+        }
+      }
+    }
+  ]
+}
